@@ -1,4 +1,4 @@
-name: Build Windows EXE
+name: Build and Release Windows EXE
 
 on:
   push:
@@ -8,6 +8,8 @@ on:
 jobs:
   build-windows:
     runs-on: windows-latest
+    permissions:
+      contents: write    # Needed to create/upload to Releases
     steps:
       - uses: actions/checkout@v4
 
@@ -20,11 +22,16 @@ jobs:
         run: pip install -r requirements.txt pyinstaller
 
       - name: Build EXE
-        run: |
-          pyinstaller --onefile --windowed geolocator.py
+        run: pyinstaller --onefile --windowed geolocator.py
 
-      - name: Upload EXE artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: geolocator-exe
-          path: dist/geolocator.exe
+      - name: Install GitHub CLI
+        run: |
+          choco install gh -y
+          echo "C:\\Program Files\\GitHub CLI" >> $GITHUB_PATH
+
+      - name: Create or Update Release and Upload EXE
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release delete latest -y || true
+          gh release create latest ./dist/geolocator.exe --title "Latest Build" --notes "Automated build of the latest commit from main." --prerelease --target ${{ github.sha }}
