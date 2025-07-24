@@ -4,7 +4,8 @@
 
 ### Download Latest Windows Build
 
-- [See latest successful build and download the `.exe` artifact here.](https://github.com/AngryMunky/geolocation_lookup_tool/actions/workflows/build.yml?query=branch%3Amain)
+- [Download Latest geolocator.exe](https://github.com/AngryMunky/geolocation_lookup_tool/releases/latest/download/geolocator.exe)
+
 
 Version 1.2.2  
 Author: [Angry Munky](https://github.com/AngryMunky)  
