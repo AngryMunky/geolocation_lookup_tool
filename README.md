@@ -1,4 +1,5 @@
 # Geolocation Lookup Tool
+[![Build Windows EXE](https://github.com/AngryMunky/geolocation_lookup_tool/actions/workflows/build.yml/badge.svg)](https://github.com/AngryMunky/geolocation_lookup_tool/actions/workflows/build.yml)
 
 Version 1.2.1  
 Author: [Angry Munky](https://github.com/AngryMunky)  
