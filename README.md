@@ -1,10 +1,10 @@
 # Geolocation Lookup Tool
-
 [![Build Windows EXE](https://github.com/AngryMunky/geolocation_lookup_tool/actions/workflows/build.yml/badge.svg)](https://github.com/AngryMunky/geolocation_lookup_tool/actions/workflows/build.yml)
 
-### Download Latest Windows Build
+[![Latest Release](https://img.shields.io/github/v/release/AngryMunky/geolocation_lookup_tool?label=release)](https://github.com/AngryMunky/geolocation_lookup_tool/releases/latest)
 
-- [Download Latest geolocator.exe](https://github.com/AngryMunky/geolocation_lookup_tool/releases/latest/download/geolocator.exe)
+[Download Latest geolocator.exe](https://github.com/AngryMunky/geolocation_lookup_tool/releases/latest/download/geolocator.exe)
+
 
 
 Version 1.2.2  
