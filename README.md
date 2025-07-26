@@ -1,4 +1,4 @@
-# Geolocation Lookup Tool
+# Geolocation Zone Tool
 [![Latest Release](https://img.shields.io/github/v/release/AngryMunky/geolocation_lookup_tool?label=release)](https://github.com/AngryMunky/geolocation_lookup_tool/releases/latest)  [![Build Windows EXE](https://github.com/AngryMunky/geolocation_lookup_tool/actions/workflows/build.yml/badge.svg)](https://github.com/AngryMunky/geolocation_lookup_tool/actions/workflows/build.yml)
 
 Version 1.2.2  
